@@ -55,11 +55,11 @@
     <origin xyz="0.234214 0.011291 0.867876" rpy="3.1416 -0.0349 0"/>
   </joint>
 
-  <link name="velodyne_link" />
+  <link name="velodyne" />
 
   <joint name="velodyne_joint" type="fixed">
     <parent link="base_link"/>
-    <child link="velodyne_link"/>
+    <child link="velodyne"/>
     <origin xyz="0.177514 0.009591 1.384793" rpy="0 0.0349 0"/>
   </joint>
 
