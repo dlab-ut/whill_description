@@ -19,14 +19,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://whill_urdf_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://whill_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="steel_satin"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://whill_urdf_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://whill_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
