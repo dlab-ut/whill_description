@@ -19,12 +19,13 @@ def generate_launch_description():
             package='robot_state_publisher',
             executable='robot_state_publisher',
             arguments=[urdf_file],
+            parameters=[{'use_sim_time': True}]
         ),
-        Node(
-            package='rviz2',
-            executable='rviz2',
-            name='rviz2',
-            output='screen',
-            arguments=['-d', rviz_config_file]
-        ),
+        # Node(
+        #     package='rviz2',
+        #     executable='rviz2',
+        #     name='rviz2',
+        #     output='screen',
+        #     arguments=['-d', rviz_config_file]
+        # ),
     ])

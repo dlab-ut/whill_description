@@ -31,12 +31,13 @@
     </collision>
   </link>
 
+
   <link name="left_mid_link"/>
 
   <joint name="left_mid_joint" type="fixed">
     <parent link="base_link"/>
     <child link="left_mid_link"/>
-    <origin xyz="0.235214 0.273508 0.823493" rpy="-1.5708 -1.6057 0"/>
+    <origin xyz="0.235214 0.273508 0.867876" rpy="-1.5708 -1.6057 0"/>
   </joint>
 
   <link name="right_mid_link"/>
@@ -44,7 +45,7 @@
   <joint name="right_mid_joint" type="fixed">
     <parent link="base_link"/>
     <child link="right_mid_link"/>
-    <origin xyz="0.234214 -0.274326 0.823493" rpy="1.5708 -1.6057 0"/>
+    <origin xyz="0.234214 -0.274326 0.867876" rpy="1.5708 -1.6057 0"/>
   </joint>
 
   <link name="center_mid_link"/>
@@ -52,7 +53,7 @@
   <joint name="center_mid_joint" type="fixed">
     <parent link="base_link"/>
     <child link="center_mid_link"/>
-    <origin xyz="0.234214 0.011291 0.867876" rpy="3.1416 -0.0349 0"/>
+    <origin xyz="0.234214 0.011291 0.867876" rpy="3.1416 -0.0349 0.0"/>
   </joint>
 
   <link name="velodyne" />
@@ -60,7 +61,18 @@
   <joint name="velodyne_joint" type="fixed">
     <parent link="base_link"/>
     <child link="velodyne"/>
-    <origin xyz="0.177514 0.009591 1.384793" rpy="0 0.0349 0"/>
+    <origin xyz="0.177514 0.009591 1.384793" rpy="0 0.0349 -0.035266462599716"/>
+    <!-- <origin xyz="0.177514 0.009591 0" rpy="0 0.0349 -0.087266462599716"/> -->
+    <!-- <origin xyz="0.177514 0.009591 0" rpy="0 0.0349 -0.035266462599716"/> -->
+
+  </joint>
+
+  <link name="camera_link"/>
+
+  <joint name="camera_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera_link"/>
+    <origin xyz="0.265214 0.011291 0.963493" rpy="0 0 0"/>
   </joint>
 
 </robot>
